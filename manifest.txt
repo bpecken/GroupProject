@@ -1,0 +1,7 @@
+Manifest file for archive_knb-lter-hfr.85.16_15475111849831236.zip created on Mon Jan 14 17:13:04 MST 2019
+hf085-01-bird.csv (5054 bytes)
+hf085-02-overstory.csv (2384 bytes)
+hf085-03-understory.csv (2494 bytes)
+knb-lter-hfr.85.16.xml (83772 bytes)
+knb-lter-hfr.85.16.txt (28799 bytes)
+knb-lter-hfr.85.16.report.xml (59225 bytes)

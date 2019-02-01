@@ -1,0 +1,1122 @@
+Dataset title:  Avian Response to Hemlock Woolly Adelgid in Southern New England 2000-2001
+
+Dataset ID:  HF085
+Dataset Creator
+
+	Name:		David Orwig
+
+	Name:		Glenn Motzkin
+
+
+Dataset Abstract
+
+
+
+Dataset Keywords
+
+	birds
+	community composition
+	forest disturbance
+	hemlock
+	hemlock woolly adelgid
+	disturbance
+	Harvard Forest
+	HFR
+	LTER
+	USA
+
+
+Intellectual Rights
+
+
+
+Distribution
+
+	Online distribution:  http://harvardforest.fas.harvard.edu:8080/exist/xquery/data.xq?id=hf085
+
+
+Geographic Coverage
+
+
+	Bounding Coordinates
+
+		Geographic description:	Central Connecticut
+		West bounding coordinate:	-72.73
+		East bounding coordinate:	-72.25
+		North bounding coordinate:	+41.99
+		South bounding coordinate:	+41.28
+	
+
+
+
+Temporal Coverage
+
+	Start Date:  2000
+	End Date:  2001
+
+
+Dataset Contact
+
+
+
+Methods
+
+
+
+	Method Step 
+
+		Description 
+
+
+
+Data Table
+
+	Entity Name:  hf085-01-bird.csv
+	Entity Description:  bird
+	Object Name:  hf085-01-bird.csv
+
+
+
+Data Format
+
+	Number of Header Lines:  1
+	Attribute Orientation:  column
+	Field Delimiter:  ,
+	Number of Records:  40
+
+
+
+Attributes
+
+	Attribute Name:  sample.point
+	Attribute Label:  
+	Attribute Definition:  sample point
+	Storage Type:  
+	Measurement Scale: 
+		sample point
+	Missing Value Code: 
+
+
+	Attribute Name:  mortality.class
+	Attribute Label:  
+	Attribute Definition:  rating of overstory hemlock mortality
+	Storage Type:  
+	Measurement Scale: 
+		Low= 0-10% overstory hemlock mortality
+		Medium= 11-60% overstory hemlock mortality
+		High-A= more than 60% hemlock mortality with little black birch regeneration
+		High-B= more than 60% hemlock mortality with dense black birch regeneration
+	Missing Value Code: 
+
+
+	Attribute Name:  acfl
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Acadian flycatcher (Empidonax virescens) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  amcr
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of American crow (Corvus brachyrhynchos) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  amgo
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of American goldfinch (Carduelis tristis) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  amro
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of American robin (Turdus migratorius)  at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  baww
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Black-and-white warbler (Mniotilta varia) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  bcch
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Black-capped Chickadee (Parus atricapillus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  bhco
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Brown creeper (Certhia americana) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  blbw
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Blackburnian warbler (Dendroica fusca) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  blja
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Blue jay (Cyanocitta cristata) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  brcr
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Brown-headed cowbird (Molothrus ater) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  btnw
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Black-throated green warbler (Dendroica virens) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  cawa
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Canada warbler (Wilsonia canadensis) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  cedw
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Cedar waxwing (Bombycilla cedrorum) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  cogr
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Common grackle (Quiscalus quiscula) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  dowo
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Downy woodpecker (Picoides pubescens) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  eaki
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Eastern kingbird (Tyrannus tyrannus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  eaph
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Eastern phoebe (Sayornis phoebe) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  eato
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Eastern towhee (Pipilo erythrophthalmus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  eawp
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Eastern wood pewee (Contopus virens) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  etti
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Tufted titmouse (Parus bicolor) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  gcfl
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Great-crested flycatcher (Myiarchus crinitus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  gcki
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Golden-crowned kinglet (Regulus satrapa) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  grca
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Gray catbird (Dumetella carolinensis) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  hawo
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Hairy woodpecker (Picoides villosus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  heth
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Hermit thrush (Catharus guttatus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  howa
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Hooded warbler (Wilsonia citrina) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  modo
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Mourning dove (Zenaida macroura) 
+at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  noca
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Mourning dove (Zenaida macroura) 
+at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  oven
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Ovenbird (Seiurus aurocapillus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  piwa
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Pine warbler (Dendroica pinus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  piwo
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Pileated woodpecker (Dryocopus pileatus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  rbgr
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Rose-breasted grosbeak (Pheucticus ludovicianus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  rbnu
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Red-breasted nuthatch (Sitta canadensis) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  revi
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Red-eyed vireo (Vireo olivacea) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  rphe
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Ring-necked pheasant (Phasianus colchicus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  rsha
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Red-shouldered hawk (Buteo lineatus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  rtha
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Red-tailed hawk (Buteo jamaicensis) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  rthu
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Ruby-throated hummingbird (Archilochus colubris) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  scju
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Dark-eyed junco (Junco hyemalis) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  scta
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Scarlet tanager (Piranga olivacea) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  sovi
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Blue-headed vireo (Vireo solitarious) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  veer
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Veery (Catharus fuscescens) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  wbnu
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of White-breasted nuthatch (Sitta carolinensis) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  wewa
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Worm-eating warbler (Helmitheros vermivorus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  witu
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Wild turkey (Meleagris gallopavo) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  wiwr
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Winter wren (Troglodytes troglodytes) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  woth
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Wood thrush (Hylocichlia mustelina) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  ysfl
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Northern flicker (Colaptes auratus) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  ytvi
+	Attribute Label:  
+	Attribute Definition:  average relative abundance of Yellow-throated vireo (Vireo flavifrons) at each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  sample.point
+	Attribute Label:  
+	Attribute Definition:  sample point
+	Storage Type:  
+	Measurement Scale: 
+		sample point
+	Missing Value Code: 
+
+
+	Attribute Name:  mortality.class
+	Attribute Label:  
+	Attribute Definition:  rating of overstory hemlock mortality
+	Storage Type:  
+	Measurement Scale: 
+		Low= 0-10% overstory hemlock mortality
+		Medium= 11-60% overstory hemlock mortality
+		High-A= more than 60% hemlock mortality with little black birch regeneration
+		High-B= more than 60% hemlock mortality with dense black birch regeneration
+	Missing Value Code: 
+
+
+	Attribute Name:  tsca.alive
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  tsca.dead
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  tsca.total
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  acpe
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  acru
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  acsa
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  beal
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  bele
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  bepa
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  caov
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  fagr
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  frpe
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  piri
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  pist
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  prse
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  qual
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  qupr
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  quru
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  quve
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  saal
+	Attribute Label:  
+	Attribute Definition:  basal area for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  total.ba
+	Attribute Label:  
+	Attribute Definition:  total basal area at each sampling point measured with a 10-factor cruise-all
+	Storage Type:  
+	Measurement Scale: 
+		Units:		meterSquaredPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  sample.point
+	Attribute Label:  
+	Attribute Definition:  sample point
+	Storage Type:  
+	Measurement Scale: 
+		sample point
+	Missing Value Code: 
+
+
+	Attribute Name:  mortality.class
+	Attribute Label:  
+	Attribute Definition:  rating of overstory hemlock mortality
+	Storage Type:  
+	Measurement Scale: 
+		Low= 0-10% overstory hemlock mortality
+		Medium= 11-60% overstory hemlock mortality
+		High-A= more than 60% hemlock mortality with little black birch regeneration
+		High-B= more than 60% hemlock mortality with dense black birch regeneration
+	Missing Value Code: 
+
+
+	Attribute Name:  tsca
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  acpe
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  acru
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  acsa
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  acsa2
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  bele
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  fagr
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  frpe
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  litu
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  pist
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  qual
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  qupr
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  quru
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  quve
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  saal
+	Attribute Label:  
+	Attribute Definition:  seeds/ha for each species at each sampling point
+	Storage Type:  
+	Measurement Scale: 
+		Units:		numberPerHectare
+		Precision:  1
+		Number Type:  whole
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  fern.cover
+	Attribute Label:  
+	Attribute Definition:  average percent cover of fern species in 4 subplots within each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  laurel.cover
+	Attribute Label:  
+	Attribute Definition:  average percent cover of Laurel in 4 subplots within each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units:  number
+		Precision:  0.1
+		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
+	Attribute Name:  birch.height
+	Attribute Label:  
+	Attribute Definition:  average height of tallest birch in 4 subplots within each sample point
+	Storage Type:  
+	Measurement Scale: 
+		Units  meter
+		Precision:.01		Number Type:  real
+	Missing Value Code: NA  (missing value)
+
+
