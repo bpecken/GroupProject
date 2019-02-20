@@ -17,14 +17,20 @@ sem <- function(x){
 #Compute means for omnivores and insectivores in the different mortality classes
 
 Omnivores.Mean <- tapply(Guilds$Omn_16, Guilds$mortality.class, mean)
+Omnivores.Mean
+
 
 Insectivores.Mean <- tapply(Guilds$Ins_29, Guilds$mortality.class, mean)
+Insectivores.Mean
 
 #Compute standard errors for those means
 
 Omnivores.SE <- tapply(Guilds$Omn_16, Guilds$mortality.class, sem)
+Omnivores.SE
+
 
 Insectivores.SE <- tapply(Guilds$Ins_29, Guilds$mortality.class, sem)
+Insectivores.SE
 
 #Omnivore bar plot
 OmnivorePlot <- barplot(Omnivores.Mean, ylim = c(0, round(1.5*max(Omnivores.Mean), digits = 0)),
@@ -53,7 +59,17 @@ arrows(x0 = InsectivorePlot, y0 = Insectivores.Mean , y1 = Insectivores.Mean + I
 
 
 
-#Try to get the omnivore and insectivore bars on same plot
+#Try to get the omnivore and insectivore bars on same pl
+
+  #Load excel file with means and S.E.s for both guilds at each mortality class
+
+ClusteredBar <- read.csv("GuildsClusteredBar.csv", header = TRUE)
+ClusteredBar
+str(ClusteredBar)
+
+ggplot(ClusteredBar, aes(x=Mortality, y = Mean, fill = Guild)) +
+  geom_bar(position=position_dodge(), stat ="identity", colour = 'black') + geom_errorbar(aes(ymin=Mean-S.E., ymax=Mean+S.E.), width = .2, position = position_dodge(.9)) + ggtitle("Bird Abundance")
+
 
 #Run Omnivore Anova
 
@@ -68,7 +84,7 @@ TukeyHSD(OmnivoreAnova)
 InsectivoreAnova <- aov(Guilds$Ins_29~Guilds$mortality.class, data = Guilds)
 
 summary(InsectivoreAnova)
-TukeyHSD(OmnivoreAnova)
+TukeyHSD(InsectivoreAnova)
 
 
 
