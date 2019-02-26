@@ -1,3 +1,15 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Dustin Brewer ; Brooke Peckenpaugh
+
+
+#Set working directory, load packages
+
+```{r}
 setwd("C:/Users/dusti/Box Sync/Personal Computer/Quantitative Biodiversity/Group Project/GroupProject")
 rm(list=ls())
 
@@ -9,21 +21,28 @@ library(dplyr)
 library(corrplot)
 
 
+```
+
 
 # SPECIES RICHNESS CODE, WITHOUT FORAGING GUILDS
 
+#Load, manipulate data
+
+```{r}
 data.without.guilds <- read.csv("hf085-01-bird.csv", header = TRUE)
 
 data.num <- data.without.guilds[ ,3:51]
 
+
+```
+
+
+#Write functions
+
+```{r}
 S.obs <- function(x = ""){
   rowSums(x > 0) * 1
 }
-
-
-obs.rich <- S.obs(data.num)
-
-obs.rich
 
 S.chao2 <- function(site = "", SbyS = ""){
   SbyS = as.data.frame(SbyS)
@@ -35,46 +54,170 @@ S.chao2 <- function(site = "", SbyS = ""){
   return(S.chao2)
 }
 
-S.chao2
-
-est.rich <- S.chao2(1:40, data.num)
-est.rich
-
-
-
-
-
-# FORAGING GUILDS CODE, MEAN ABUNDANCE
-
-
-Guilds <- read.csv("ForagingGuildsDataFile.csv")
-
-str(Guilds)
-summary(Guilds)
-
 sem <- function(x){
   sd(na.omit(x))/sqrt(length(na.omit(x)))
 }
 
+```
+
+
+#Determine observed and estimated species richness
+```{r}
+obs.rich <- S.obs(data.num)
+obs.rich
+
+
+est.rich <- S.chao2(1:40, data.num)
+est.rich
+```
+
+#Make species richness plot
+```{r}
+data.rich <- cbind(data.without.guilds, est.rich)
+data.rich
+
+m1 <- lm(est.rich ~ mortality.class, data = data.rich)
+summary(m1)
+
+
+mortality <- factor(data.rich$mortality.class, levels = c("Low", "Med", "Hi-A", "Hi-B"))
+mortality
+
+data.means <- tapply(data.rich$est.rich, mortality, mean)
+
+
+data.sem <- tapply(data.rich$est.rich, mortality, sem)
+
+
+bp1 <- barplot(data.means, ylim = c(0, round(max(data.rich$est.rich), digits = 0)),
+               pch = 15, cex = 1.25, las = 1, cex.lab = 1.4, cex.axis = 1.25,
+               xlab = "Mortality class",
+               ylab = "# Species",
+               names.arg = c("Low", "Medium", "High-A", "High-B"), main = "Estimated Richness")
+
+arrows(x0 = bp1, y0 = data.means, y1 = data.means - data.sem, angle = 90,
+       length = 0.1, lwd = 1)
+arrows(x0 = bp1, y0 = data.means, y1 = data.means + data.sem, angle = 90,
+       length = 0.1, lwd = 1)
+
+
+```
+
+#Run Anova
+```{r}
+fitanova <- aov(est.rich ~ mortality, data = data.rich)
+fitanova
+
+summary(fitanova)
+TukeyHSD(fitanova)
+
+par(mfrow = c(2,2), mar = c(5.1, 4.1, 4.1, 2.1))
+plot(fitanova)
+
+```
+
+
+
+
+
+
+
+#Mean abundance
+
+#Open data 
+```{r}
+MeanAbundMort <- read.csv("MortalityMeanAbund.csv")
+```
+
+
+#Reorder labels on x axis
+
+```{r}
+MeanAbundMort$Mortality <- fct_relevel(MeanAbundMort$Mortality, "Low", "Medium", "High-B", "High-A")
+
+```
+
+
+#Plot
+
+```{r}
+ggplot(MeanAbundMort, aes(x=Mortality, y = Abundance)) +
+  geom_bar(position=position_dodge(), stat ="identity", colour = 'black') + geom_errorbar(aes(ymin=Abundance-S.E., ymax=Abundance+S.E.), width = .2, position = position_dodge(.9)) + ggtitle("Mean Abundance") 
+
+```
+
+
+
+
+
+
+#FORAGING GUILDS CODE
+
+#Species Richness
+
+
+#Open species richness foraging guilds file
+
+Spec.Rich.Guilds <- read.csv("GuildsClusteredRich.csv")
+```{r}
+Spec.Rich.Guilds <- read.csv("GuildsClusteredRich.csv")
+```
+
+
+#Reorder labels on x axis
+```{r}
+
+Spec.Rich.Guilds$Mortality <- fct_relevel(Spec.Rich.Guilds$Mortality, "Low", "Medium", "High-B", "High-A")
+```
+
+
+#Plot
+
+```{r}
+ggplot(Spec.Rich.Guilds, aes(x=Mortality, y = Richness, fill = Guild)) +
+  geom_bar(position=position_dodge(), stat ="identity", colour = 'black') + geom_errorbar(aes(ymin=Richness-S.E., ymax=Richness+S.E.), width = .2, position = position_dodge(.9)) + ggtitle("Observed Species Richness") 
+```
+
+
+# Mean Abundance (Guilds)
+
+#Load Data
+```{r}
+Guilds <- read.csv("ForagingGuildsDataFile.csv")
+
+str(Guilds)
+summary(Guilds)
+```
+
+
 #Compute means for omnivores and insectivores in the different mortality classes
 
+```{r}
 Omnivores.Mean <- tapply(Guilds$Omn_16, Guilds$mortality.class, mean)
 Omnivores.Mean
-
 
 Insectivores.Mean <- tapply(Guilds$Ins_29, Guilds$mortality.class, mean)
 Insectivores.Mean
 
+```
+
+
+
 #Compute standard errors for those means
 
+```{r}
 Omnivores.SE <- tapply(Guilds$Omn_16, Guilds$mortality.class, sem)
 Omnivores.SE
 
 
 Insectivores.SE <- tapply(Guilds$Ins_29, Guilds$mortality.class, sem)
 Insectivores.SE
+```
+
 
 #Omnivore bar plot
+
+```{r}
 OmnivorePlot <- barplot(Omnivores.Mean, ylim = c(0, round(1.5*max(Omnivores.Mean), digits = 0)),
                pch = 15, cex = 1.25, las = 1, cex.lab = 1.4, cex.axis = 1.25,
                xlab = "mortality class",
@@ -86,7 +229,15 @@ arrows(x0 = OmnivorePlot, y0 = Omnivores.Mean, y1 = Omnivores.Mean - Omnivores.S
 arrows(x0 = OmnivorePlot, y0 = Omnivores.Mean , y1 = Omnivores.Mean + Omnivores.SE, angle = 90,
        length = 0.1, lwd = 1)
 
+
+
+
+```
+
+
 #Insectivore bar plot
+
+```{r}
 InsectivorePlot <- barplot(Insectivores.Mean, ylim = c(0, round(1.5*max(Insectivores.Mean), digits = 0)),
                         pch = 15, cex = 1.25, las = 1, cex.lab = 1.4, cex.axis = 1.25,
                         xlab = "mortality class",
@@ -98,39 +249,61 @@ arrows(x0 = InsectivorePlot, y0 = Insectivores.Mean, y1 = Insectivores.Mean - In
 arrows(x0 = InsectivorePlot, y0 = Insectivores.Mean , y1 = Insectivores.Mean + Insectivores.SE, angle = 90,
        length = 0.1, lwd = 1)
 
+```
 
 
 
 #Get omnivore and insectivore bars on same plot
 
   #Load excel file with means and S.E.s for both guilds at each mortality class
-
+```{r}
 ClusteredBar <- read.csv("GuildsClusteredBar.csv", header = TRUE)
 ClusteredBar
 str(ClusteredBar)
 
+```
+
+
+
 #Reorder x axis
+
+```{r}
 ClusteredBar$Mortality <- fct_relevel(ClusteredBar$Mortality, "Low", "Medium", "High-B", "High-A")
 
 
 ggplot(ClusteredBar, aes(x=Mortality, y = Mean, fill = Guild)) +
   geom_bar(position=position_dodge(), stat ="identity", colour = 'black') + geom_errorbar(aes(ymin=Mean-S.E., ymax=Mean+S.E.), width = .2, position = position_dodge(.9)) + ggtitle("Bird Abundance") 
 
+```
+
 
 #Run Omnivore Anova
+
+```{r}
 
 OmnivoreAnova <- aov(Guilds$Omn_16~Guilds$mortality.class, data = Guilds)
 OmnivoreAnova
 
 summary(OmnivoreAnova)
 TukeyHSD(OmnivoreAnova)
+```
+
+
 
 #Run Insectivore ANOVA
 
+```{r}
 InsectivoreAnova <- aov(Guilds$Ins_29~Guilds$mortality.class, data = Guilds)
 
 summary(InsectivoreAnova)
 TukeyHSD(InsectivoreAnova)
+
+
+
+```
+
+
+
 
 
 
